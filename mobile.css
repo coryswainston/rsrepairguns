@@ -1,0 +1,409 @@
+/*********************************************************
+* MOBILE.CSS
+* Styles for the mobile site: rsrepairguns.com/mobile.html
+***********************************************************/
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+#hours, #services, #contact {
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+section, article {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #fdfdfd, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, #fdfdfd, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, #fdfdfd, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #f9f9f9 , white); /* Standard syntax */
+}
+
+h3 {
+    font-size: 2em;
+    color: darkred;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/********************************************
+* HOME
+*********************************************/
+
+#home {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+}
+
+#home > div {
+    margin: 0;
+}
+
+#home .buttons {
+    height: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home .buttons > div {
+    height: 90%;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkred; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #aa0000, #880000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, #aa0000, #880000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, #aa0000, #880000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #aa0000, #880000); /* Standard syntax */
+    border-radius: 40px;
+    box-shadow: 0 2px 3px black;
+}
+
+#home .buttons > div:active {
+    background: darkred; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #880000, #aa0000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, #880000, #aa0000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, #880000, #aa0000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #880000, #aa0000); /* Standard syntax */
+}
+
+.buttons a > div {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .buttons div a div .icon {
+    width: 80%;
+    height: 80%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#home .buttons div a div .icon img {
+    height: 80%;
+    
+}
+
+#home .buttons div a span {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    font-size: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+#home .logo {
+    height: 20%;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 3em;
+    color: grey;
+}
+
+h1 strong {
+    font-weight: 300;
+    color: black;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 1.5em;
+    color: black;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    left: 110vw;
+    top: 0;
+    justify-content: center;
+    box-shadow: 0 0 20px grey;
+    transition: left 200ms;
+}
+
+article.visible {
+    left: 5%;
+}
+
+article img {
+    width: 100%;
+}
+
+article .wrapper {
+    width: 90%;
+}
+
+article .about {
+    font-family: arial, sans-serif, helvetica;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    background: darkred;
+    padding: 5px 7px;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 3px 3px 8px lightgrey;
+}
+
+/*************************************************
+* NAVIGATION
+**************************************************/
+
+nav {
+    position: absolute;
+    width: 100%;
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10vw;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #bbb, #555); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, #bbb, #555); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, #bbb #555); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #333, #000); /* Standard syntax */
+    box-shadow: 0 1px 2px black;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+nav ul li img {
+    height: 100%;
+}
+
+/**********************************************
+* HOURS
+***********************************************/
+
+#hours {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#hours h3:nth-child(1) {
+    padding: 50px 0 0;
+}
+
+#hours ul {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 2vw 0;;
+}
+
+#hours li {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#hours .picture {
+    width: 100%;
+}
+
+.picture img {
+    width: 100%;
+}
+
+/***********************************************
+SERVICES
+***********************************************/
+
+#services {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    font-weight: 300;
+    font-size: 1.3em;
+    width: 100%;
+    margin-top: 5vw;
+}
+
+tr:nth-child(odd) {
+    background: #ddd;
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+#services .picture {
+    width: 80%;
+}
+
+/************************************************
+* CONTACT
+*************************************************/
+
+#contact {
+    text-align: center;
+}
+
+#contact ul {
+    height: 80%;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact li {
+    width: 75%;
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+    background: grey;
+    background: -webkit-linear-gradient(top, #ddd, #ccc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, #ddd, #ccc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, #ddd, #ccc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #ddd, #ccc); /* Standard syntax */
+    border-radius: 10px;
+    padding: 0 5vw;
+    box-shadow: 0 2px 3px grey;
+}
+
+#contact li div {
+    width: 20%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact li div img {
+    width: 80%;
+    max-height: 80%;
+}
+
+#contact h3 {
+    padding-top: 50px;
+    font-size: 1.6em;
+}
+
+/*****************************************
+* FOOTER
+*******************************************/
+
+footer {
+    width: 100%;
+    margin: 0;
+    background: #222222;
+}
+
+footer .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer ul {
+    width: 50%;
+    font-size: .8em;
+    color: white;
+    font-weight: 100;
+}
+
+footer ul strong {
+    font-weight: 300;
+}
+
+footer p {
+    margin: 0;
+}
+
+.credit a {
+    color: white;
+    font-weight: 100;
+    color: #ddd;
+    text-decoration: 0;
+    font-size: .7em;
+}
+
+
+
+
+
+@media all and (orientation:landscape) {
+    
+    #hours, #services, #contact {
+        height: 100vw;
+        margin: 0 10vw;
+    }
+    
+    #home {
+        height: 100vh;
+        margin: 0 15vw;
+        width: 70vw;
+
+    }
+    
+    #home .logo {
+        border: none;
+    }
+    
+    #home .logo h2 {
+        display: none;
+    }
+}

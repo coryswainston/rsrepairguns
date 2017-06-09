@@ -1,0 +1,21 @@
+{
+	"Services": {
+		1: ["FFL Transfers", 10],
+		2: ["Minimum Labor Charge", 20],
+		3: ["Thread and Chamber Barrel", 120],
+		4: ["Muzzle Crown", 30],
+		5: ["Muzzle Brake Installed", 160],
+		6: ["Trigger Work", "25 - $50"],
+		7: ["Action Bedding", 50]
+	},
+
+	"Hours": {
+		"Monday": "6:00 pm to 9:00 pm",
+		"Tuesday": "6:00 pm to 9:00 pm",
+		"Wednesday": "6:00 pm to 9:00 pm",
+		"Thursday": "6:00 pm to 9:00 pm",
+		"Friday": "Closed",
+		"Saturday": "8:00 am to 6:00 pm",
+		"Sunday": "Closed",
+	}
+}
